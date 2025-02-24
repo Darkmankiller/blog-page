@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firewall101 - Hack-Proof Your Knowledge</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/theme.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class="logo-svg">
+                        <path d="M20 2 L35 10 L35 30 L20 38 L5 30 L5 10 Z" fill="#0a1931" stroke="#00ff99" stroke-width="2" />
+                        <path d="M20 8 L26 16 L20 28 L14 16 Z" fill="#00ff99" />
+                    </svg>
+                    Firewall101
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-switch">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero fade-in">
+            <div class="hero-content">
+                <h1>Hack-Proof Your Knowledge</h1>
+                <p>Explore the latest in cybersecurity, ethical hacking, and digital protection</p>
+                <a href="posts.html" class="cta-btn">Explore Posts</a>
+            </div>
+            <div class="hero-background">
+                <div class="data-lines"></div>
+            </div>
+        </section>
+
+        <section class="featured-posts slide-up">
+            <div class="container">
+                <h2>Featured Posts</h2>
+                <div class="posts-grid" id="featured-posts-container">
+                    <!-- Featured posts will be loaded here from JavaScript -->
+                    <div class="loading-spinner">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cybersecurity-stats slide-up">
+            <div class="container">
+                <h2>Cybersecurity in Numbers</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="stat-number">43%</div>
+                        <div class="stat-text">of cyber attacks target small businesses</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-lock"></i></div>
+                        <div class="stat-number">$4.35M</div>
+                        <div class="stat-text">average cost of a data breach in 2024</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-bug"></i></div>
+                        <div class="stat-number">300%</div>
+                        <div class="stat-text">increase in ransomware attacks since 2020</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter slide-up">
+            <div class="container">
+                <h2>Stay Protected</h2>
+                <p>Subscribe to our newsletter for the latest cybersecurity tips and updates</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="cta-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Firewall101</h3>
+                    <p>Hack-Proof Your Knowledge</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="posts.html">Posts</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Firewall101. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if dark mode is enabled
+            const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+            if (isDarkMode) {
+                document.body.classList.add('dark-mode');
+                document.getElementById('theme-switch').checked = true;
+            }
+
+            // Hamburger menu toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Newsletter form submit
+            document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                alert(`Thank you for subscribing with: ${email}`);
+                this.reset();
+            });
+        });
+    </script>
+</body>
+</html>
