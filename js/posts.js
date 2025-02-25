@@ -39,62 +39,13 @@ async function loadAllPosts() {
                 id: 1,
                 title: 'Understanding Zero Trust Security',
                 excerpt: 'Explore the core principles of Zero Trust and how this security model can protect your organization in an increasingly complex threat landscape.',
-                image: '/api/placeholder/600/400',
-                date: 'February 20, 2025',
-                author: 'Alex Chen',
+                image: 'firewall101\images\post1.jpg',
+                date: 'February 25, 2025',
+                author: 'Goutham krishnan',
                 category: 'Security Models',
                 url: 'posts/post1.html'
             },
-            {
-                id: 2,
-                title: 'The Ransomware Threat Landscape in 2025',
-                excerpt: 'A comprehensive overview of current ransomware trends, attack vectors, and effective defense strategies.',
-                image: '/api/placeholder/600/400',
-                date: 'February 15, 2025',
-                author: 'Sarah Johnson',
-                category: 'Threats',
-                url: 'posts/post2.html'
-            },
-            {
-                id: 3,
-                title: 'Ethical Hacking: Tools of the Trade',
-                excerpt: 'Discover the essential tools and techniques used by professional penetration testers to identify vulnerabilities before malicious actors do.',
-                image: '/api/placeholder/600/400',
-                date: 'February 10, 2025',
-                author: 'Michael Wong',
-                category: 'Ethical Hacking',
-                url: 'posts/post3.html'
-            },
-            {
-                id: 4,
-                title: 'Securing your Cloud Infrastructure',
-                excerpt: 'Learn best practices for protecting your cloud-based assets and ensuring compliance with security standards.',
-                image: '/api/placeholder/600/400',
-                date: 'February 5, 2025',
-                author: 'Lisa Patel',
-                category: 'Cloud Security',
-                url: 'posts/post4.html'
-            },
-            {
-                id: 5,
-                title: 'The Human Factor: Social Engineering Attacks',
-                excerpt: 'Why human psychology remains the weakest link in cybersecurity and how to strengthen your organization against manipulation.',
-                image: '/api/placeholder/600/400',
-                date: 'January 30, 2025',
-                author: 'David Kim',
-                category: 'Social Engineering',
-                url: 'posts/post5.html'
-            },
-            {
-                id: 6,
-                title: 'Advanced Persistent Threats: Detection and Response',
-                excerpt: 'Strategies for identifying and mitigating sophisticated, targeted attacks from nation-states and organized crime groups.',
-                image: '/api/placeholder/600/400',
-                date: 'January 25, 2025',
-                author: 'Rebecca Torres',
-                category: 'Threat Detection',
-                url: 'posts/post6.html'
-            }
+            
         ];
         
         // Remove loading spinner
