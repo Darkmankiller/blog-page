@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Firewall101</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/theme.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <style>
+        .founder-photo {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            border: 3px solid #00ff99;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hex-container {
+            position: relative;
+            max-width: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        .hex-mask {
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class="logo-svg">
+                        <path d="M20 2 L35 10 L35 30 L20 38 L5 30 L5 10 Z" fill="#0a1931" stroke="#00ff99" stroke-width="2" />
+                        <path d="M20 8 L26 16 L20 28 L14 16 Z" fill="#00ff99" />
+                    </svg>
+                    Firewall101
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-switch">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero fade-in">
+            <div class="container">
+                <h1>About Firewall101</h1>
+                <p class="subtitle">Our mission is to democratize cybersecurity knowledge for everyone.</p>
+            </div>
+        </section>
+
+        <section class="about-story slide-up">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <div class="hex-container">
+                            <div class="hex-mask">
+                                <img src="images/goutham-krishnan.jpg" alt="Goutham Krishnan" class="founder-photo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <h2>Our Story</h2>
+                        <p>Firewall101 was founded in 2023 by Goutham Krishnan, a BSc Cyber Forensic graduate passionate about cybersecurity education.</p>
+                        <p>We believe that cybersecurity shouldn't be obscure or intimidating. By presenting complex security concepts in accessible ways, we aim to help individuals and businesses protect themselves in an increasingly digital world.</p>
+                        <p>What started as a small collection of guides has grown into a comprehensive resource trusted by cybersecurity enthusiasts and professionals alike.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section slide-up">
+            <div class="container">
+                <h2>About the Founder</h2>
+                <div class="team-grid single-member">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/goutham-krishnan.jpg" alt="Goutham Krishnan" class="founder-photo">
+                        </div>
+                        <h3>Goutham Krishnan</h3>
+                        <p class="member-title">Founder & Lead Security Researcher</p>
+                        <p>BSc in Cyber Forensics with expertise in digital investigation techniques and cybersecurity best practices. Passionate about making cybersecurity knowledge accessible to everyone and helping organizations protect their digital assets.</p>
+                        <div class="member-social">
+                            <a href="https://www.linkedin.com/in/goutham-krishnan-4820a2334/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/go_utham007/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="mailto:gouthamkrishnan991@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section slide-up">
+            <div class="container">
+                <h2>Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-unlock-alt"></i></div>
+                        <h3>Accessibility</h3>
+                        <p>We believe security knowledge should be available to everyone, regardless of technical background.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-code-branch"></i></div>
+                        <h3>Practicality</h3>
+                        <p>Our content focuses on actionable steps you can implement immediately to improve your security posture.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Ethics</h3>
+                        <p>We promote responsible security practices and never share information that could be used maliciously.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-robot"></i></div>
+                        <h3>Innovation</h3>
+                        <p>As threats evolve, so do we. We're committed to exploring cutting-edge security techniques and technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section slide-up">
+            <div class="container">
+                <h2>Join Our Community</h2>
+                <p>Connect with like-minded security enthusiasts and stay updated with the latest in cybersecurity.</p>
+                <div class="cta-buttons">
+                    <a href="posts.html" class="cta-btn">Explore Our Content</a>
+                    <a href="contact.html" class="cta-btn-outline">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Firewall101</h3>
+                    <p>Hack-Proof Your Knowledge</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="posts.html">Posts</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/go_utham007/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/goutham-krishnan-4820a2334/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:gouthamkrishnan991@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Firewall101. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if dark mode is enabled
+            const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+            if (isDarkMode) {
+                document.body.classList.add('dark-mode');
+                document.getElementById('theme-switch').checked = true;
+            }
+
+            // Hamburger menu toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
