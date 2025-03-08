@@ -39,12 +39,24 @@ async function loadAllPosts() {
                 id: 1,
                 title: 'Understanding Zero Trust Security',
                 excerpt: 'Explore the core principles of Zero Trust and how this security model can protect your organization in an increasingly complex threat landscape.',
-                image: 'firewall101\images\post1.jpg',
+                image: 'firewall101\post1.jpg',
                 date: 'February 25, 2025',
                 author: 'Goutham krishnan',
                 category: 'Security Models',
                 url: 'posts/post1.html'
             },
+            {
+                id: 2,
+                title: 'Metasploit: Ethical Hacking Made Simple',
+                excerpt: 'In the world of cybersecurity, understanding how systems can be compromised is essential for learning how to protect them. Metasploit is one of the most powerful tools for this purpose, providing a framework that even beginners can use to understand security vulnerabilities.',
+                image: 'firewall101\post1.jpg',
+                date: 'February 25, 2025',
+                author: 'Goutham krishnan',
+                category: 'Security Models',
+                url: 'posts/post2.html'
+            },
+
+
             
         ];
         
@@ -103,22 +115,7 @@ async function loadFeaturedPosts() {
                 date: 'February 20, 2025',
                 url: 'posts/post1.html'
             },
-            {
-                id: 3,
-                title: 'Ethical Hacking: Tools of the Trade',
-                excerpt: 'Discover the essential tools and techniques used by professional penetration testers to identify vulnerabilities before malicious actors do.',
-                image: '/api/placeholder/600/400',
-                date: 'February 10, 2025',
-                url: 'posts/post3.html'
-            },
-            {
-                id: 5,
-                title: 'The Human Factor: Social Engineering Attacks',
-                excerpt: 'Why human psychology remains the weakest link in cybersecurity and how to strengthen your organization against manipulation.',
-                image: '/api/placeholder/600/400',
-                date: 'January 30, 2025',
-                url: 'posts/post5.html'
-            }
+            
         ];
         
         // Remove loading spinner
